@@ -19,6 +19,9 @@ export async function generateMetadata({
   };
 }
 
+const UPX = "https://images.unsplash.com/photo-";
+const UQ = "?w=800&q=85&auto=format&fit=crop";
+
 // Static blog articles for GEO-SEO
 const BLOG_POSTS = [
   {
@@ -26,8 +29,9 @@ const BLOG_POSTS = [
     category: "guides",
     readingTime: 8,
     date: "2025-04-15",
-    coverColor: "from-teal-500 to-teal-700",
-    emoji: "🏠",
+    // Cluttered room full of boxes → empathy/hoarding context
+    coverImage: `${UPX}caCqtH-CrCI${UQ}`,
+    overlayClass: "bg-teal-900/70",
     fr: {
       title: "Syndrome de Diogène : Comment Reconnaître et Aider un Proche",
       excerpt:
@@ -46,8 +50,9 @@ const BLOG_POSTS = [
     category: "legal",
     readingTime: 6,
     date: "2025-03-28",
-    coverColor: "from-navy-600 to-navy-900",
-    emoji: "⚖️",
+    // Damaged building exterior — unsanitary housing
+    coverImage: `${UPX}NVmdPTa-6s4${UQ}`,
+    overlayClass: "bg-navy-900/75",
     fr: {
       title: "Logement Insalubre : Vos Droits et Démarches en France",
       excerpt:
@@ -66,8 +71,9 @@ const BLOG_POSTS = [
     category: "guides",
     readingTime: 5,
     date: "2025-03-10",
-    coverColor: "from-gold-400 to-gold-600",
-    emoji: "🕊️",
+    // Serene empty hallway — discreet/peaceful
+    coverImage: `${UPX}3hO8igCybds${UQ}`,
+    overlayClass: "bg-navy-950/70",
     fr: {
       title: "Nettoyage Post-Mortem : Qui Appeler et Comment Procéder ?",
       excerpt:
@@ -86,8 +92,9 @@ const BLOG_POSTS = [
     category: "tips",
     readingTime: 7,
     date: "2025-02-20",
-    coverColor: "from-teal-600 to-navy-700",
-    emoji: "📦",
+    // Room full of junk and stored items — clearance context
+    coverImage: `${UPX}8zpfe1rDRGM${UQ}`,
+    overlayClass: "bg-teal-900/65",
     fr: {
       title: "Débarras pour Succession : Guide Complet et Conseils Pratiques",
       excerpt:
@@ -106,8 +113,9 @@ const BLOG_POSTS = [
     category: "tips",
     readingTime: 9,
     date: "2025-02-05",
-    coverColor: "from-teal-400 to-teal-600",
-    emoji: "🧹",
+    // Professional cleaner in gloves — disinfection action
+    coverImage: `${UPX}-dc38HdQR1M${UQ}`,
+    overlayClass: "bg-teal-800/60",
     fr: {
       title: "Désinfection Complète d'un Logement : Les Étapes Professionnelles",
       excerpt:
@@ -126,8 +134,9 @@ const BLOG_POSTS = [
     category: "guides",
     readingTime: 5,
     date: "2025-01-18",
-    coverColor: "from-navy-500 to-navy-800",
-    emoji: "⚠️",
+    // Janitor cleaning floor — professional context
+    coverImage: `${UPX}0CuTJUAOn-4${UQ}`,
+    overlayClass: "bg-navy-900/70",
     fr: {
       title: "Comment Reconnaître un Logement Insalubre ? Les 10 Critères Clés",
       excerpt:
@@ -200,17 +209,23 @@ export default async function BlogPage({
               return (
                 <Link key={post.slug} href={`/${locale}/blog/${post.slug}`}>
                   <Card hover className="h-full group overflow-hidden" padding="none">
-                    {/* Cover */}
-                    <div className={`bg-gradient-to-br ${post.coverColor} h-48 flex items-center justify-center`}>
-                      <span className="text-6xl">{post.emoji}</span>
+                    {/* Cover image with overlay */}
+                    <div className="relative h-52 overflow-hidden">
+                      <img
+                        src={post.coverImage}
+                        alt={content.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <div className={`absolute inset-0 ${post.overlayClass}`} />
+                      <span className="absolute bottom-3 left-3 text-xs font-semibold text-white/80 uppercase tracking-widest bg-white/10 backdrop-blur-sm px-2.5 py-1 rounded-full">
+                        {content.category}
+                      </span>
                     </div>
 
                     {/* Content */}
                     <div className="p-6">
                       <div className="flex items-center gap-3 mb-3">
-                        <span className="text-xs font-semibold bg-teal-50 text-teal-700 px-3 py-1 rounded-full">
-                          {content.category}
-                        </span>
                         <span className="flex items-center gap-1 text-navy-400 text-xs">
                           <Clock size={12} />
                           {post.readingTime} {isFr ? "min" : "min read"}

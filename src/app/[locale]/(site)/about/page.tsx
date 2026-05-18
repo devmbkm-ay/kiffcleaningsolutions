@@ -108,18 +108,29 @@ export default async function AboutPage({
                   : "With over 500 interventions carried out across Île-de-France, we have built recognised expertise and a reputation founded on discretion and efficiency."}
               </p>
             </div>
-            <div className="bg-gradient-to-br from-navy-50 to-teal-50 rounded-3xl p-10 space-y-4">
-              {[
-                { label: isFr ? "Interventions réalisées" : "Interventions completed", value: "500+" },
-                { label: isFr ? "Taux de satisfaction" : "Satisfaction rate", value: "98%" },
-                { label: isFr ? "Années d'expertise" : "Years of expertise", value: "10+" },
-                { label: isFr ? "Disponibilité" : "Availability", value: "24/7" },
-              ].map(({ label, value }) => (
-                <div key={label} className="flex items-center justify-between py-3 border-b border-teal-100 last:border-0">
-                  <span className="text-navy-600 text-sm">{label}</span>
-                  <span className="font-display font-800 text-2xl gradient-text">{value}</span>
+            <div className="relative rounded-3xl overflow-hidden">
+              {/* Professional cleaning team photo */}
+              <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=85&auto=format&fit=crop"
+                alt="Équipe Kiff Cleaning Solutions au travail"
+                className="w-full h-72 lg:h-96 object-cover"
+              />
+              {/* Stats overlay */}
+              <div className="absolute inset-0 bg-linear-to-t from-navy-950/90 via-navy-950/30 to-transparent flex flex-col justify-end p-8">
+                <div className="grid grid-cols-2 gap-4">
+                  {[
+                    { label: isFr ? "Interventions" : "Interventions", value: "500+" },
+                    { label: isFr ? "Satisfaction" : "Satisfaction", value: "98%" },
+                    { label: isFr ? "Expérience" : "Experience", value: "10 ans" },
+                    { label: isFr ? "Disponibilité" : "Availability", value: "24/7" },
+                  ].map(({ label, value }) => (
+                    <div key={label} className="text-center">
+                      <div className="font-display font-800 text-2xl gradient-text">{value}</div>
+                      <div className="text-white/70 text-xs mt-0.5">{label}</div>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>

@@ -39,18 +39,18 @@ export function Hero() {
       className="relative min-h-[90vh] flex items-center overflow-hidden bg-navy-950"
       aria-label="Hero section"
     >
-      {/* Background pattern */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-teal-500/10 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-navy-800/50 blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-teal-500/5 blur-3xl" />
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)`,
-            backgroundSize: "60px 60px",
-          }}
+      {/* Background image — professional cleaning team */}
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80&auto=format&fit=crop"
+          alt="Professional cleaning service"
+          className="w-full h-full object-cover opacity-20"
         />
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-linear-to-r from-navy-950 via-navy-950/95 to-navy-950/70" />
+        {/* Teal accent glow */}
+        <div className="absolute -top-40 -right-40 w-150 h-150 rounded-full bg-teal-500/15 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-20 left-1/3 w-100 h-100 rounded-full bg-teal-500/8 blur-3xl pointer-events-none" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">

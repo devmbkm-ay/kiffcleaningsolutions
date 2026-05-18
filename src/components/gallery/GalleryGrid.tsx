@@ -11,55 +11,90 @@ const CATEGORIES = [
   { key: "debarras", labelFr: "Débarras", labelEn: "Clearance" },
 ];
 
-// Placeholder gallery items with unsplash images for demo
+const BASE = "https://images.unsplash.com/photo-";
+const Q = "?w=800&q=85&auto=format&fit=crop";
+
+// Curated before/after pairs — realistic cleaning interventions
 const DEMO_ITEMS = [
   {
     id: "1",
     category: "diogene",
     titleFr: "Appartement Parisien — Remise en état complète",
     titleEn: "Parisian Apartment — Complete Restoration",
-    beforeImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    afterImage: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80",
+    // Before: cluttered room full of boxes and items
+    beforeImage: `${BASE}caCqtH-CrCI${Q}`,
+    // After: clean bright modern living room
+    afterImage: `${BASE}TBJrxAvVx_M${Q}`,
   },
   {
     id: "2",
     category: "insalubre",
     titleFr: "Maison Seine-et-Marne — Désinfection complète",
     titleEn: "Seine-et-Marne House — Complete Disinfection",
-    beforeImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80",
-    afterImage: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80",
+    // Before: abandoned dusty attic with debris
+    beforeImage: `${BASE}NVmdPTa-6s4${Q}`,
+    // After: clean sanitized white kitchen
+    afterImage: `${BASE}xazSfWzFHIU${Q}`,
   },
   {
     id: "3",
     category: "debarras",
     titleFr: "Débarras complet — Cave et grenier",
     titleEn: "Complete Clearance — Basement and Attic",
-    beforeImage: "https://images.unsplash.com/photo-1558618047-3bfc14c65f08?w=600&q=80",
-    afterImage: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80",
+    // Before: room full of junk and boxes
+    beforeImage: `${BASE}8zpfe1rDRGM${Q}`,
+    // After: empty clean bright room
+    afterImage: `${BASE}AgK_XAqSbfk${Q}`,
   },
   {
     id: "4",
     category: "diogene",
     titleFr: "Studio Île-de-France — Transformation totale",
     titleEn: "Île-de-France Studio — Total Transformation",
-    beforeImage: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&q=80",
-    afterImage: "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=600&q=80",
+    // Before: messy toy/item filled space
+    beforeImage: `${BASE}8u-OaI3MZrc${Q}`,
+    // After: clean modern open living space
+    afterImage: `${BASE}43vHzsfrmxk${Q}`,
   },
   {
     id: "5",
     category: "insalubre",
     titleFr: "Cuisine insalubre — Remise aux normes",
     titleEn: "Unsanitary Kitchen — Standards Restoration",
-    beforeImage: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80",
-    afterImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    // Before: professional cleaner working on floor (gloves, protective)
+    beforeImage: `${BASE}-dc38HdQR1M${Q}`,
+    // After: spotless modern kitchen
+    afterImage: `${BASE}nmKPgfIUYtM${Q}`,
   },
   {
     id: "6",
     category: "debarras",
     titleFr: "Succession — Vide appartement complet",
     titleEn: "Estate — Complete Flat Clearance",
-    beforeImage: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80",
-    afterImage: "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=600&q=80",
+    // Before: furnished cluttered old living room
+    beforeImage: `${BASE}oakaqTozkv8${Q}`,
+    // After: clean empty modern space ready to hand over
+    afterImage: `${BASE}jZkFVycn3FQ${Q}`,
+  },
+  {
+    id: "7",
+    category: "diogene",
+    titleFr: "Logement social — Intervention complète",
+    titleEn: "Social Housing — Full Intervention",
+    // Before: professional cleaner cleaning floor (action shot)
+    beforeImage: `${BASE}0CuTJUAOn-4${Q}`,
+    // After: bright clean bedroom
+    afterImage: `${BASE}ABohRftG_Os${Q}`,
+  },
+  {
+    id: "8",
+    category: "insalubre",
+    titleFr: "Immeuble Meaux — Remise aux normes sanitaires",
+    titleEn: "Meaux Building — Sanitary Standards Restoration",
+    // Before: cleaning professional with protective gear
+    beforeImage: `${BASE}kLZs4yoR0uU${Q}`,
+    // After: clean modern interior
+    afterImage: `${BASE}9KGB4HspwsM${Q}`,
   },
 ];
 

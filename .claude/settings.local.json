@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(bun run *)"
+      "Bash(bun run *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'fix: lazy MONGODB_URI check + remove invalid html/body in admin layout *)"
     ]
   }
 }

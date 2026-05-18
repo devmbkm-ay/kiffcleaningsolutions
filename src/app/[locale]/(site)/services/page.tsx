@@ -96,19 +96,46 @@ export default async function ServicesPage({
                     </Link>
                   </div>
 
-                  {/* Visual card */}
-                  <div className={`bg-gradient-to-br from-navy-50 to-teal-50 rounded-3xl p-10 flex items-center justify-center min-h-[280px] border border-teal-100 ${isEven ? "lg:col-start-1" : ""}`}>
-                    <div className="text-center">
-                      <div className="w-20 h-20 bg-teal-500/10 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <span className="text-4xl">
-                          {service.key === "diogene" ? "🏠" : service.key === "insalubre" ? "⚠️" : service.key === "postMortem" ? "🕊️" : "📦"}
-                        </span>
+                  {/* Photo card */}
+                  {(() => {
+                    const PHOTOS: Record<string, { src: string; alt: string }> = {
+                      diogene: {
+                        src: "https://images.unsplash.com/photo-caCqtH-CrCI?w=800&q=85&auto=format&fit=crop",
+                        alt: "Logement affecté par le syndrome de Diogène — accumulation d'objets",
+                      },
+                      insalubre: {
+                        src: "https://images.unsplash.com/photo-0CuTJUAOn-4?w=800&q=85&auto=format&fit=crop",
+                        alt: "Nettoyage professionnel d'un logement insalubre",
+                      },
+                      postMortem: {
+                        src: "https://images.unsplash.com/photo-3hO8igCybds?w=800&q=85&auto=format&fit=crop",
+                        alt: "Intervention discrète et respectueuse post-mortem",
+                      },
+                      debarras: {
+                        src: "https://images.unsplash.com/photo-8zpfe1rDRGM?w=800&q=85&auto=format&fit=crop",
+                        alt: "Débarras complet d'un logement encombré",
+                      },
+                    };
+                    const photo = PHOTOS[service.key];
+                    return (
+                      <div className={`relative rounded-3xl overflow-hidden min-h-[320px] ${isEven ? "lg:col-start-1" : ""}`}>
+                        <img
+                          src={photo.src}
+                          alt={photo.alt}
+                          className="w-full h-full object-cover absolute inset-0"
+                          style={{ minHeight: "320px" }}
+                          loading="lazy"
+                        />
+                        {/* Overlay with tagline */}
+                        <div className="absolute inset-0 bg-linear-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
+                        <div className="absolute bottom-0 left-0 right-0 p-6">
+                          <p className="text-white/90 text-sm italic leading-relaxed">
+                            {content.tagline}
+                          </p>
+                        </div>
                       </div>
-                      <p className="text-navy-400 text-sm italic max-w-xs">
-                        {content.tagline}
-                      </p>
-                    </div>
-                  </div>
+                    );
+                  })()}
                 </div>
               );
             })}

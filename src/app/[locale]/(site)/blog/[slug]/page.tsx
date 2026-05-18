@@ -6,20 +6,24 @@ import { Badge } from "@/components/ui/Badge";
 import { CTASection } from "@/components/sections/CTASection";
 import { formatDate } from "@/lib/utils";
 
+const UPX = "https://images.unsplash.com/photo-";
+const UQ = "?w=1400&q=90&auto=format&fit=crop";
+
 // Inline static blog content (GEO-optimized with answer capsules, structured headings, FAQ)
 const ARTICLES: Record<string, {
   date: string;
   readingTime: number;
-  coverColor: string;
-  emoji: string;
+  coverImage: string;
+  coverAlt: string;
   fr: { title: string; category: string; excerpt: string; content: string };
   en: { title: string; category: string; excerpt: string; content: string };
 }> = {
   "syndrome-de-diogene-comment-aider": {
     date: "2025-04-15",
     readingTime: 8,
-    coverColor: "from-teal-500 to-teal-700",
-    emoji: "🏠",
+    // Cluttered living room with boxes — hoarding disorder context
+    coverImage: `${UPX}caCqtH-CrCI${UQ}`,
+    coverAlt: "Logement affecté par le syndrome de Diogène — accumulation d'objets et encombrement",
     fr: {
       title: "Syndrome de Diogène : Comment Reconnaître et Aider un Proche",
       category: "Guide",
@@ -152,8 +156,9 @@ Kiff Cleaning Solutions intervenes throughout Île-de-France with a compassionat
   "logement-insalubre-droits-locataire": {
     date: "2025-03-28",
     readingTime: 6,
-    coverColor: "from-navy-600 to-navy-900",
-    emoji: "⚖️",
+    // Abandoned building — unsanitary housing context
+    coverImage: `${UPX}NVmdPTa-6s4${UQ}`,
+    coverAlt: "Logement insalubre — état dégradé d'une habitation",
     fr: {
       title: "Logement Insalubre : Vos Droits et Démarches en France",
       category: "Légal",
@@ -215,8 +220,9 @@ Kiff Cleaning Solutions intervenes to restore unsanitary properties to standard,
   "nettoyage-post-mortem-qui-appeler": {
     date: "2025-03-10",
     readingTime: 5,
-    coverColor: "from-gold-400 to-gold-600",
-    emoji: "🕊️",
+    // Silhouette in corridor — quiet, dignified, peaceful mood
+    coverImage: `${UPX}3hO8igCybds${UQ}`,
+    coverAlt: "Intervention discrète et respectueuse — nettoyage post-mortem",
     fr: {
       title: "Nettoyage Post-Mortem : Qui Appeler et Comment Procéder ?",
       category: "Guide",
@@ -451,9 +457,21 @@ export default async function BlogPostPage({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
-      {/* Hero */}
-      <section className={`bg-gradient-to-br ${article.coverColor} py-20 lg:py-28`}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Hero with real photo */}
+      <section className="relative py-24 lg:py-32 overflow-hidden">
+        {/* Background photo */}
+        <img
+          src={article.coverImage}
+          alt={article.coverAlt}
+          className="absolute inset-0 w-full h-full object-cover"
+          priority-fetch="high"
+        />
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-navy-950/75 backdrop-blur-[1px]" />
+        {/* Bottom gradient */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-white to-transparent" />
+
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href={`/${locale}/blog`}
             className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors mb-8 text-sm"

@@ -4,7 +4,10 @@
       "Bash(bun run *)",
       "Bash(git add *)",
       "Bash(git commit -m 'fix: lazy MONGODB_URI check + remove invalid html/body in admin layout *)",
-      "Bash(vercel env *)"
+      "Bash(vercel env *)",
+      "Bash(pkill -f \"next build\")",
+      "Bash(git commit -m 'feat: replace emoji placeholders with realistic photos on services & blog article pages *)",
+      "Bash(git push *)"
     ]
   }
 }

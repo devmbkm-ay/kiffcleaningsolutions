@@ -4,7 +4,9 @@ import { Quote } from "@/lib/models/Quote";
 import { Resend } from "resend";
 import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 const quoteSchema = z.object({
   firstName: z.string().min(2),
@@ -45,6 +47,7 @@ export async function POST(req: NextRequest) {
 
     // Send notification to admin
     if (process.env.RESEND_API_KEY) {
+      const resend = getResend();
       await resend.emails.send({
         from: "Kiff Cleaning Solutions <noreply@kiffcleaningsolutions.com>",
         to: process.env.ADMIN_EMAIL || "contact@kiffcleaningsolutions.com",

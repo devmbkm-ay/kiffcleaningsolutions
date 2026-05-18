@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "quote": "Free Quote",
+    "contact": "Contact",
+    "phone": "07 70 10 83 39"
+  },
+  "hero": {
+    "badge": "24/7 Rapid Response",
+    "title": "Extreme Cleaning",
+    "titleHighlight": "Expert & Discreet",
+    "subtitle": "Specialists in extreme cleaning, restoration and disinfection across Île-de-France. We handle the most delicate situations with respect, discretion and efficiency.",
+    "cta": "Request a Free Quote",
+    "ctaSecondary": "View our services",
+    "emergency": "Emergency? Call now",
+    "stats": {
+      "interventions": "Interventions completed",
+      "satisfaction": "Satisfaction rate",
+      "availability": "Availability",
+      "experience": "Years of experience"
+    }
+  },
+  "services": {
+    "title": "Our Specialized Services",
+    "subtitle": "Expert solutions for every difficult situation",
+    "learnMore": "Learn more",
+    "items": {
+      "diogene": {
+        "name": "Diogenes Syndrome",
+        "tagline": "Complete restoration of homes affected by hoarding disorder",
+        "description": "We handle the complete restoration of properties affected by Diogenes syndrome, with absolute tact and confidentiality."
+      },
+      "insalubre": {
+        "name": "Unsanitary Housing",
+        "tagline": "Intensive cleaning and complete disinfection of degraded properties",
+        "description": "Elimination of all health hazards, complete disinfection and compliance restoration for any type of unsanitary housing."
+      },
+      "postMortem": {
+        "name": "Post-Mortem Cleaning",
+        "tagline": "Rapid and discreet intervention for sensitive scenes",
+        "description": "Emergency intervention with total disinfection, respecting sanitary protocols and the dignity of those involved."
+      },
+      "debarras": {
+        "name": "Clearance & Removal",
+        "tagline": "Complete emptying, sorting and space restoration",
+        "description": "Full clearance service, bulk waste removal, selective sorting and final cleaning to restore your space."
+      }
+    }
+  },
+  "trust": {
+    "title": "Why Choose Us?",
+    "subtitle": "Our commitment to excellence and discretion",
+    "items": {
+      "discretion": {
+        "title": "Absolute Discretion",
+        "description": "Total confidentiality guaranteed. Our teams work in neutral attire and our vehicles are unmarked."
+      },
+      "availability": {
+        "title": "24/7 Availability",
+        "description": "We respond to your emergencies 7 days a week, 24 hours a day, with rapid intervention within 2 hours."
+      },
+      "expertise": {
+        "title": "Certified Expertise",
+        "description": "Teams trained in the strictest sanitary safety protocols and professional cleaning techniques."
+      },
+      "compassion": {
+        "title": "No Judgment",
+        "description": "We support our clients through difficult situations with kindness, empathy and professionalism."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real testimonials from people we have helped"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about our services"
+  },
+  "cta": {
+    "title": "Need an Urgent Intervention?",
+    "subtitle": "Contact us now for a free and confidential assessment. We are available 24/7.",
+    "button": "Get a Free Quote",
+    "callButton": "Call Now"
+  },
+  "about": {
+    "title": "About Kiff Cleaning Solutions",
+    "subtitle": "A company built on commitment, discretion and expertise"
+  },
+  "gallery": {
+    "title": "Our Work Speaks for Itself",
+    "subtitle": "Before/after gallery of our completed interventions",
+    "filters": {
+      "all": "All",
+      "diogene": "Diogenes Syndrome",
+      "insalubre": "Unsanitary Housing",
+      "postMortem": "Post-Mortem",
+      "debarras": "Clearance"
+    },
+    "before": "Before",
+    "after": "After"
+  },
+  "quote": {
+    "title": "Free Quote Request",
+    "subtitle": "Fill in this form to receive a personalized estimate within 24 hours",
+    "steps": {
+      "contact": "Your Contact Details",
+      "service": "Service Type",
+      "details": "Details & Photos"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "city": "City",
+      "postalCode": "Postal Code",
+      "serviceType": "Service Type",
+      "description": "Description of the situation",
+      "urgency": "Urgency level",
+      "photos": "Photos (optional)"
+    },
+    "urgency": {
+      "normal": "Normal (within 1 week)",
+      "urgent": "Urgent (within 48h)",
+      "very_urgent": "Very Urgent (within 24h)"
+    },
+    "submit": "Send My Request",
+    "success": "Your request has been sent. We will contact you as soon as possible.",
+    "confidential": "Your data is strictly confidential and will never be shared."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are available 24/7 to respond to your emergencies",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "address": "Address",
+    "hours": "Hours",
+    "hoursValue": "24/7 — All year",
+    "zone": "Service Area",
+    "zoneValue": "Île-de-France (77, 75, 91, 92, 93, 94, 95)"
+  },
+  "blog": {
+    "title": "Our Tips & Articles",
+    "subtitle": "Information and guides on professional cleaning and restoration",
+    "readMore": "Read more",
+    "categories": {
+      "tips": "Tips",
+      "guides": "Guides",
+      "news": "News",
+      "case-studies": "Case Studies"
+    },
+    "minRead": "min read"
+  },
+  "footer": {
+    "description": "Specialists in extreme cleaning, restoration and disinfection across Île-de-France. 24/7 intervention.",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "sitemap": "Sitemap",
+    "links": {
+      "about": "About",
+      "gallery": "Gallery",
+      "blog": "Blog",
+      "quote": "Quote Request",
+      "contact": "Contact"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back",
+    "seeAll": "See all",
+    "callNow": "Call Now",
+    "freeQuote": "Free Quote",
+    "learnMore": "Learn more",
+    "confidential": "Confidential & Discreet",
+    "available247": "Available 24/7"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "À Propos",
+    "gallery": "Galerie",
+    "blog": "Blog",
+    "quote": "Devis Gratuit",
+    "contact": "Contact",
+    "phone": "07 70 10 83 39"
+  },
+  "hero": {
+    "badge": "Intervention 24h/24 — 7j/7",
+    "title": "Nettoyage Extrême",
+    "titleHighlight": "Expert & Discret",
+    "subtitle": "Spécialistes du nettoyage extrême, de la remise en état et de la désinfection en Île-de-France. Nous intervenons dans les situations les plus délicates avec respect, discrétion et efficacité.",
+    "cta": "Demander un Devis Gratuit",
+    "ctaSecondary": "Voir nos services",
+    "emergency": "Urgence ? Appelez maintenant",
+    "stats": {
+      "interventions": "Interventions réalisées",
+      "satisfaction": "Taux de satisfaction",
+      "availability": "Disponibilité",
+      "experience": "Années d'expérience"
+    }
+  },
+  "services": {
+    "title": "Nos Services Spécialisés",
+    "subtitle": "Des solutions expertes pour chaque situation difficile",
+    "learnMore": "En savoir plus",
+    "items": {
+      "diogene": {
+        "name": "Syndrome de Diogène",
+        "tagline": "Remise en état complète d'habitations touchées par le syndrome de thésaurisation",
+        "description": "Nous prenons en charge la remise en état complète des logements affectés par le syndrome de Diogène, avec tact et confidentialité absolue."
+      },
+      "insalubre": {
+        "name": "Logement Insalubre",
+        "tagline": "Nettoyage intensif et désinfection complète des habitations dégradées",
+        "description": "Élimination de tous les risques sanitaires, désinfection complète et remise aux normes de tout type de logement insalubre."
+      },
+      "postMortem": {
+        "name": "Nettoyage Post-Mortem",
+        "tagline": "Intervention rapide et discrète pour scènes sensibles",
+        "description": "Intervention d'urgence avec désinfection totale, dans le respect des protocoles sanitaires et de la dignité des personnes concernées."
+      },
+      "debarras": {
+        "name": "Débarras & Évacuation",
+        "tagline": "Vidage complet, tri et restauration de l'espace",
+        "description": "Service complet de débarras, évacuation des encombrants, tri sélectif et nettoyage final pour restaurer votre espace."
+      }
+    }
+  },
+  "trust": {
+    "title": "Pourquoi Nous Choisir ?",
+    "subtitle": "Notre engagement envers l'excellence et la discrétion",
+    "items": {
+      "discretion": {
+        "title": "Discrétion Absolue",
+        "description": "Confidentialité totale garantie. Nos équipes interviennent en tenue neutre et nos véhicules sont non identifiés."
+      },
+      "availability": {
+        "title": "Disponibilité 24h/24",
+        "description": "Nous répondons à vos urgences 7 jours sur 7, 24 heures sur 24, avec une intervention rapide sous 2 heures."
+      },
+      "expertise": {
+        "title": "Expertise Certifiée",
+        "description": "Équipes formées aux protocoles de sécurité sanitaire les plus stricts et aux techniques de nettoyage professionnel."
+      },
+      "compassion": {
+        "title": "Sans Jugement",
+        "description": "Nous accompagnons nos clients dans des situations difficiles avec bienveillance, empathie et professionnalisme."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Des témoignages réels de personnes que nous avons aidées"
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "subtitle": "Tout ce que vous devez savoir sur nos services"
+  },
+  "cta": {
+    "title": "Besoin d'une Intervention Urgente ?",
+    "subtitle": "Contactez-nous maintenant pour une évaluation gratuite et confidentielle. Nous sommes disponibles 24h/24.",
+    "button": "Obtenir un Devis Gratuit",
+    "callButton": "Appeler Maintenant"
+  },
+  "about": {
+    "title": "À Propos de Kiff Cleaning Solutions",
+    "subtitle": "Une entreprise fondée sur l'engagement, la discrétion et l'expertise"
+  },
+  "gallery": {
+    "title": "Notre Travail Parle Pour Lui-Même",
+    "subtitle": "Galerie avant/après de nos interventions réalisées",
+    "filters": {
+      "all": "Tous",
+      "diogene": "Syndrome de Diogène",
+      "insalubre": "Logement Insalubre",
+      "postMortem": "Post-Mortem",
+      "debarras": "Débarras"
+    },
+    "before": "Avant",
+    "after": "Après"
+  },
+  "quote": {
+    "title": "Demande de Devis Gratuit",
+    "subtitle": "Remplissez ce formulaire pour obtenir une estimation personnalisée sous 24h",
+    "steps": {
+      "contact": "Vos Coordonnées",
+      "service": "Type de Service",
+      "details": "Détails & Photos"
+    },
+    "fields": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "address": "Adresse",
+      "city": "Ville",
+      "postalCode": "Code Postal",
+      "serviceType": "Type de Service",
+      "description": "Description de la situation",
+      "urgency": "Niveau d'urgence",
+      "photos": "Photos (optionnel)"
+    },
+    "urgency": {
+      "normal": "Normal (sous 1 semaine)",
+      "urgent": "Urgent (sous 48h)",
+      "very_urgent": "Très Urgent (sous 24h)"
+    },
+    "submit": "Envoyer ma Demande",
+    "success": "Votre demande a bien été envoyée. Nous vous contacterons dans les plus brefs délais.",
+    "confidential": "Vos données sont strictement confidentielles et ne seront jamais partagées."
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous sommes disponibles 24h/24 pour répondre à vos urgences",
+    "phone": "Téléphone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "address": "Adresse",
+    "hours": "Horaires",
+    "hoursValue": "24h/24 — 7j/7",
+    "zone": "Zone d'Intervention",
+    "zoneValue": "Île-de-France (77, 75, 91, 92, 93, 94, 95)"
+  },
+  "blog": {
+    "title": "Nos Conseils & Articles",
+    "subtitle": "Informations et guides sur le nettoyage professionnel et la remise en état",
+    "readMore": "Lire la suite",
+    "categories": {
+      "tips": "Conseils",
+      "guides": "Guides",
+      "news": "Actualités",
+      "case-studies": "Études de Cas"
+    },
+    "minRead": "min de lecture"
+  },
+  "footer": {
+    "description": "Spécialistes du nettoyage extrême, de la remise en état et de la désinfection en Île-de-France. Intervention 24h/24, 7j/7.",
+    "services": "Services",
+    "company": "Entreprise",
+    "legal": "Légal",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions Générales",
+    "sitemap": "Plan du Site",
+    "links": {
+      "about": "À Propos",
+      "gallery": "Galerie",
+      "blog": "Blog",
+      "quote": "Demande de Devis",
+      "contact": "Contact"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "back": "Retour",
+    "seeAll": "Voir tout",
+    "callNow": "Appeler Maintenant",
+    "freeQuote": "Devis Gratuit",
+    "learnMore": "En savoir plus",
+    "confidential": "Confidentiel & Discret",
+    "available247": "Disponible 24h/24 — 7j/7"
+  }
+}
